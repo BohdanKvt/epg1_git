@@ -1,0 +1,15 @@
+ 
+ 
+git clone https://github.com/s17195/epg1_git
+cd epg1_git
+git checkout -b hw-s16563
+git checkout rebase-me
+git rebase hw-s16563
+git checkout hw-s16563
+git merge rebase-me
+git merge origin/merge-me
+git add README.md
+git commit -m "Comment"
+git add solution.txt
+git commit -m "Add solution.txt"
+git push --set-upstream origin hw-s16563
